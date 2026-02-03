@@ -1,0 +1,156 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --gray-text: #555555; 
+    --margin-container: 80px;
+
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+
+header{
+    width: 100%;
+}
+
+.hero-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.navbar{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.nav-container{
+    max-width: 1460px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.marchio{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0,8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+.nav-links a:hover{
+    color: aqua;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0%;
+    padding: 50px 20px;
+}
+
+
+.main-title{
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+
+}
+
+.section-title{
+    font-size: 45px;
+    font-weight: 700px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+.mt-20{margin-top: 20px;}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+.full-width-image{
+    width: 100%;
+    margin: 80px 0;
+}
+
+.img-full{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.footer-full{
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 200px;
+    display: block;
+
+}
+
+.footer-conteiner{
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #000000;  
+    font-size: 0.9rem;
+    line-height: 1.5;
+  
+}
+
+
+@media (max-width: 850px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2.reverse.content{
+        order: 2;
+    }
+}
